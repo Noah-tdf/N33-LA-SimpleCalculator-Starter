@@ -2,7 +2,9 @@
 
 namespace SimpleCalculator
 {
-    class Program      //yoooooooooooo
+       //yoooooooooooo
+    class Program
+        
     {
         static void Main(string[] args)
         {
