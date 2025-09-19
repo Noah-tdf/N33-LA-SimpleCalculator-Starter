@@ -1,9 +1,7 @@
 ﻿using System;
 
 namespace SimpleCalculator
-{
-       //yoooooooooooooooo
-    class Program
+{   class Program
 
     {
         static void Main(string[] args)
