@@ -2,7 +2,7 @@
 
 namespace SimpleCalculator
 {
-    class Program
+    class Program        //foes ts work gnag
     {
         static void Main(string[] args)
         {
