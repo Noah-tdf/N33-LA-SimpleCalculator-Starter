@@ -4,7 +4,7 @@
 
 namespace CalculatorEngineLibrary
 {
-    class Program        
+    class Program        //foes ts work gnagfddfg
     {
         static void Main(string[] args)
         {
@@ -25,9 +25,9 @@ namespace CalculatorEngineLibrary
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                Console.WriteLine($"Result: {result:F2}");
-            }
-            catch (Exception ex)
+                Console.WriteLine(result);
+
+            } catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
