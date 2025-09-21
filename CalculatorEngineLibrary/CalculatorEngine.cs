@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
-namespace SimpleCalculator
+
+namespace CalculatorEngineLibrary
 {
     public class CalculatorEngine
     {
@@ -15,7 +17,7 @@ namespace SimpleCalculator
                 
                     result = argFirstNumber + argSecondNumber;
                     break;
-
+                   
                 case "-":
                 case "minus":
                     result = argFirstNumber - argSecondNumber;

@@ -1,8 +1,10 @@
 ﻿using System;
 
-namespace SimpleCalculator
+
+
+namespace CalculatorEngineLibrary
 {
-    class Program        //foes ts work gnag
+    class Program        
     {
         static void Main(string[] args)
         {
