@@ -1,12 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CalculatorEngineLibrary;
 
 namespace CalculatorEngineLibrary.Test.Unit
 {
     [TestClass]
     public class CalculatorEngineTest
     {
-        private readonly CalculatorEngine _calculatorEngine = new CalculatorEngine();
+        private readonly CalculatorEngine CalculatorEngine = new CalculatorEngine();
 
         [TestMethod]
         public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
@@ -14,7 +15,7 @@ namespace CalculatorEngineLibrary.Test.Unit
 
             int number1 = 1;
             int number2 = 2;
-            double result = _calculatorEngine.Calculate("add", number1, number2);
+            double result = CalculatorEngine.Calculate("plus", number1, number2);
             Assert.AreEqual(3, result);
 
         }
@@ -25,7 +26,7 @@ namespace CalculatorEngineLibrary.Test.Unit
 
             int number1 = 1;
             int number2 = 2;
-            double result = _calculatorEngine.Calculate("+", number1, number2);
+            double result = CalculatorEngine.Calculate("+", number1, number2);
             Assert.AreEqual(3, result);
 
         }

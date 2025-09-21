@@ -4,7 +4,7 @@
 
 namespace CalculatorEngineLibrary
 {
-    class Program        //foes ts work gnagfddfg
+    class Program       
     {
         static void Main(string[] args)
         {
@@ -25,9 +25,11 @@ namespace CalculatorEngineLibrary
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
+
                 //display the result in a human readable format
                 string displayMessage = string.Format("The value {0} plus the value {1} is equal to {2:F2}", firstNumber, secondNumber, result);
                 Console.WriteLine(displayMessage);
+
             } catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
