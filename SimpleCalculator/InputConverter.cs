@@ -10,13 +10,12 @@ namespace CalculatorEngineLibrary
             double result;
 
            
-            while (!double.TryParse(argTextInput, out result))
+            if (double.TryParse(argTextInput, out result))
             {
-                Console.WriteLine("Invalid input. Please enter a valid number:");
-                argTextInput = Console.ReadLine();
+                return result;
             }
 
-            return result;
+            throw new ArgumentException("Invalid input, Enter a valid number.");
         }
     }
 }

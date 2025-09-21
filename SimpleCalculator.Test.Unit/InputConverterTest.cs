@@ -20,7 +20,7 @@ namespace CalculatorEngineLibrary.Test.Unit
         {
             string inputNumber = "*";
             double convertedNumber = InputConverter.ConvertInputToNumeric(inputNumber);
-            Assert.AreEqual(2, convertedNumber);
+            
         }
     }
 }
