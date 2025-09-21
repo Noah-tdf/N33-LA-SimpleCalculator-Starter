@@ -20,7 +20,8 @@ namespace SimpleCalculator
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                Console.WriteLine(result);
+                //display the result in a human readable format
+                Console.WriteLine("The value {0} plus the value {1} is equal to {2:F2}", firstNumber, secondNumber, result);
 
             } catch (Exception ex)
             {
