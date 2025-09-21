@@ -21,8 +21,8 @@ namespace SimpleCalculator
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
                 //display the result in a human readable format
-                Console.WriteLine("The value {0} plus the value {1} is equal to {2:F2}", firstNumber, secondNumber, result);
-
+                string displayMessage = string.Format("The value {0} plus the value {1} is equal to {2:F2}", firstNumber, secondNumber, result);
+                Console.WriteLine(displayMessage);
             } catch (Exception ex)
             {
                 // Normally, we'd log this error to a file.
