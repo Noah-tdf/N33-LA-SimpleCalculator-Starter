@@ -3,32 +3,32 @@
 namespace SimpleCalculator
 {
     class Program
-      //noah
     {
         static void Main(string[] args)
         {
             try
-            {
-                // Class to convert user input
-                InputConverter inputConverter = new InputConverter();
 
+            {
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
-                double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
+                Console.WriteLine("Enter the first number:");
+                double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+                Console.WriteLine("Enter the second number:");
+                double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+
+                Console.WriteLine("Enter the operation (+, -, *, /):");
                 string operation = Console.ReadLine();
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                Console.WriteLine(result);
-
-            } catch (Exception ex)
+                Console.WriteLine($"Result: {result:F2}");
+            }
+            catch (Exception ex)
             {
-                // Normally, we'd log this error to a file.
                 Console.WriteLine(ex.Message);
             }
-
         }
     }
 }
