@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SimpleCalculator.Test.Unit
+namespace CalculatorEngineLibrary.Test.Unit
 {
     [TestClass]
     public class CalculatorEngineTest
